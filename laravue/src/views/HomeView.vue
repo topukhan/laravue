@@ -2,7 +2,7 @@
 
 <template>
   <main>
-    <h1>This is Topu</h1>
+    <h1>This is Home Page</h1>
     <TheWelcome />
   </main>
 </template>
