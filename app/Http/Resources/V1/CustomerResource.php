@@ -17,7 +17,8 @@ class CustomerResource extends JsonResource
         $imageUrl = asset('customer_images/' . $this->image);
 
         return [
-            'id' => $this->id,
+            // 'id' => $this->id,
+            'name' => $this->name,
             'image' => $imageUrl,
             'invoices' => InvoiceResource::collection($this->whenLoaded('invoices')),
         ];

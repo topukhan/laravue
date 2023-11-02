@@ -51,13 +51,13 @@ class CustomerController extends Controller
             // Add the image path to the request data
             $image->move($path, $imageName);
         }
-        $data = [
+        $info = [
             'name' => $request->name,
             'image' => $imageName,
         ];
 
         // Create the customer
-        $customer = Customer::create($data);
+        $customer = Customer::create($info);
 
         // Return a response using the CustomerResource
         return new CustomerResource($customer);
